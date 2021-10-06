@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Spike : MonoBehaviour
 {
-    public GameObject player;
+    
     public float distanceFromPlayer = 5;
     public float distanceFromPlayerFall = 3;
     public float fallSpeed = 5;
@@ -12,10 +12,12 @@ public class Spike : MonoBehaviour
     private Animator animator;
     private bool falling = false;
     private Rigidbody2D rigidbody;
+    private GameObject player;
 
     // Start is called before the first frame update
     void Start()
     {
+        player = GameObject.FindGameObjectsWithTag("Player")[0];
         animator = gameObject.GetComponent<Animator>();
         rigidbody = gameObject.GetComponent<Rigidbody2D>();
         rigidbody.gravityScale = 0.0f;
