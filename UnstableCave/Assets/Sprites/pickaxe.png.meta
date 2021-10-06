@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: 8dcd978f4796b8d4bae54714a25d4e98
+guid: 462a82f621630bc43a8be2dc784c0330
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8959118705387878318
-    second: pickaxe_0
+      213: 7732306995073267105
+    second: pickaxe 1_0
   - first:
-      213: -690277927211705776
-    second: pickaxe_1
+      213: 7493248904697925067
+    second: pickaxe 1_1
   - first:
-      213: -2334973714226403527
-    second: pickaxe_2
+      213: 6839397044970536871
+    second: pickaxe 1_2
   - first:
-      213: 4953346704794499982
-    second: pickaxe_3
+      213: 4579644892507221128
+    second: pickaxe 1_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pickaxe_0
+      name: pickaxe 1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
-        height: 16
+        width: 19
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,20 +153,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea7b33fbefe255c70800000000000000
-      internalID: 8959118705387878318
+      spriteID: 1a53c979e3cae4b60800000000000000
+      internalID: 7732306995073267105
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pickaxe_1
+      name: pickaxe 1_1
       rect:
         serializedVersion: 2
-        x: 16
+        x: 19
         y: 0
-        width: 16
-        height: 16
+        width: 19
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 05ad048e1e3ab66f0800000000000000
-      internalID: -690277927211705776
+      spriteID: bcdca1a8d2e5df760800000000000000
+      internalID: 7493248904697925067
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pickaxe_2
+      name: pickaxe 1_2
       rect:
         serializedVersion: 2
-        x: 32
+        x: 38
         y: 0
-        width: 16
-        height: 16
+        width: 19
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,20 +195,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 93729a337c1889fd0800000000000000
-      internalID: -2334973714226403527
+      spriteID: 7af335f206b6aee50800000000000000
+      internalID: 6839397044970536871
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pickaxe_3
+      name: pickaxe 1_3
       rect:
         serializedVersion: 2
-        x: 48
+        x: 57
         y: 0
-        width: 16
-        height: 16
+        width: 19
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -216,8 +216,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e8bb0a48592ddb440800000000000000
-      internalID: 4953346704794499982
+      spriteID: 88c235704ca2e8f30800000000000000
+      internalID: 4579644892507221128
       vertices: []
       indices: 
       edges: []

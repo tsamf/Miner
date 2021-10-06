@@ -1,40 +1,37 @@
 fileFormatVersion: 2
-guid: 6b6b0ad45d0943641adc6c11e58e8313
+guid: 5557550a13842734da79dcfeaec4eec4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3876497900317922485
-    second: Miner_0
+      213: -7850301828617661553
+    second: Miner 2_0
   - first:
-      213: -7665704377882814092
-    second: Miner_1
+      213: -4842535349325684766
+    second: Miner 2_1
   - first:
-      213: 8523726649541453385
-    second: Miner_2
+      213: -904342213886985563
+    second: Miner 2_2
   - first:
-      213: -3653723790490868740
-    second: Miner_3
+      213: 539272069155058501
+    second: Miner 2_3
   - first:
-      213: 6268380942605104632
-    second: Miner_4
+      213: 3766331870389492418
+    second: Miner 2_4
   - first:
-      213: 9185611343492806920
-    second: Miner_5
+      213: -3171454322827695910
+    second: Miner 2_5
   - first:
-      213: -3120345199395018412
-    second: Miner_6
+      213: -8450698191109833490
+    second: Miner 2_6
   - first:
-      213: 6804564410424241642
-    second: Miner_7
+      213: -2252888470503988019
+    second: Miner 2_7
   - first:
-      213: 6570916190857679605
-    second: Miner_8
+      213: 1073126584942346510
+    second: Miner 2_8
   - first:
-      213: -5034823313237516992
-    second: Miner_9
-  - first:
-      213: -6385955928491888922
-    second: Miner_10
+      213: -1544708573498552293
+    second: Miner 2_9
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -160,7 +157,28 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Miner_0
+      name: Miner 2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 68
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8315ad54102e0390800000000000000
+      internalID: -7850301828617661553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Miner 2_1
       rect:
         serializedVersion: 2
         x: 0
@@ -174,14 +192,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b45ff04d461cc530800000000000000
-      internalID: 3876497900317922485
+      spriteID: 2ef9b23b1cbdbccb0800000000000000
+      internalID: -4842535349325684766
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Miner_1
+      name: Miner 2_2
       rect:
         serializedVersion: 2
         x: 0
@@ -195,14 +213,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4795323ab72fd9590800000000000000
-      internalID: -7665704377882814092
+      spriteID: 5aa30e14c812373f0800000000000000
+      internalID: -904342213886985563
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Miner_2
+      name: Miner 2_3
       rect:
         serializedVersion: 2
         x: 20
@@ -216,14 +234,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 946e2742a3c5a4670800000000000000
-      internalID: 8523726649541453385
+      spriteID: 543f647f611eb7700800000000000000
+      internalID: 539272069155058501
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Miner_3
+      name: Miner 2_4
       rect:
         serializedVersion: 2
         x: 0
@@ -237,14 +255,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf3e560229d5b4dc0800000000000000
-      internalID: -3653723790490868740
+      spriteID: 2ca5cc891e2b44430800000000000000
+      internalID: 3766331870389492418
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Miner_4
+      name: Miner 2_5
       rect:
         serializedVersion: 2
         x: 20
@@ -258,14 +276,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f53ec88143cdf650800000000000000
-      internalID: 6268380942605104632
+      spriteID: ad86a72b81bbcf3d0800000000000000
+      internalID: -3171454322827695910
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Miner_5
+      name: Miner 2_6
       rect:
         serializedVersion: 2
         x: 40
@@ -279,14 +297,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 809ffa579d8d97f70800000000000000
-      internalID: 9185611343492806920
+      spriteID: eecbcd6d4c619ba80800000000000000
+      internalID: -8450698191109833490
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Miner_6
+      name: Miner 2_7
       rect:
         serializedVersion: 2
         x: 60
@@ -300,14 +318,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 459e67dc29e42b4d0800000000000000
-      internalID: -3120345199395018412
+      spriteID: dc469055fd12cb0e0800000000000000
+      internalID: -2252888470503988019
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Miner_7
+      name: Miner 2_8
       rect:
         serializedVersion: 2
         x: 0
@@ -321,14 +339,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aed2a96774bae6e50800000000000000
-      internalID: 6804564410424241642
+      spriteID: e01448e71f284ee00800000000000000
+      internalID: 1073126584942346510
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Miner_8
+      name: Miner 2_9
       rect:
         serializedVersion: 2
         x: 20
@@ -342,50 +360,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f25fec1675903b50800000000000000
-      internalID: 6570916190857679605
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Miner_9
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 0
-        width: 20
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 04d5f9b4fd6b02ab0800000000000000
-      internalID: -5034823313237516992
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Miner_10
-      rect:
-        serializedVersion: 2
-        x: 60
-        y: 0
-        width: 20
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6eee0f2dae68067a0800000000000000
-      internalID: -6385955928491888922
+      spriteID: b105e139cb7109ae0800000000000000
+      internalID: -1544708573498552293
       vertices: []
       indices: 
       edges: []
