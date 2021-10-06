@@ -11,7 +11,7 @@ public class Spike : MonoBehaviour
 
     private Animator animator;
     private bool falling = false;
-    private Rigidbody2D rigidbody;
+    private Rigidbody2D rigidbody2d;
     private GameObject player;
 
     // Start is called before the first frame update
@@ -19,8 +19,8 @@ public class Spike : MonoBehaviour
     {
         player = GameObject.FindGameObjectsWithTag("Player")[0];
         animator = gameObject.GetComponent<Animator>();
-        rigidbody = gameObject.GetComponent<Rigidbody2D>();
-        rigidbody.gravityScale = 0.0f;
+        rigidbody2d = gameObject.GetComponent<Rigidbody2D>();
+        rigidbody2d.gravityScale = 0.0f;
     }
 
     // Update is called once per frame
@@ -41,7 +41,7 @@ public class Spike : MonoBehaviour
         {
             falling = true;
             animator.SetBool("wiggle", false);
-            rigidbody.gravityScale = 1.0f;
+            rigidbody2d.gravityScale = 1.0f;
         }
     }
 }

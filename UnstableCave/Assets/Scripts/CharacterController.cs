@@ -12,7 +12,7 @@ public class CharacterController : MonoBehaviour
     public AudioClip hurt;
 
     private bool facingLeft = true;
-    private Rigidbody2D rigibody;
+    private Rigidbody2D rigidbody2d;
     private Animator animator;
     private bool dying = false;
     private AudioSource audioSource;
@@ -23,7 +23,7 @@ public class CharacterController : MonoBehaviour
         transform.rotation = Quaternion.Euler(0, 180, 0);
         audioSource = gameObject.GetComponent<AudioSource>();
         animator = GetComponent<Animator>();
-        rigibody = GetComponent<Rigidbody2D>();
+        rigidbody2d = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -54,9 +54,9 @@ public class CharacterController : MonoBehaviour
                 animator.SetBool("Walking", false);
             }
 
-            if (Input.GetButton("Jump") && Mathf.Abs(rigibody.velocity.y) < 0.001f)
+            if (Input.GetButton("Jump") && Mathf.Abs(rigidbody2d.velocity.y) < 0.001f)
             {
-                rigibody.AddForce(new Vector2(0, JumpForce), ForceMode2D.Impulse);
+                rigidbody2d.AddForce(new Vector2(0, JumpForce), ForceMode2D.Impulse);
                 animator.SetBool("Jumping", true);
                 audioSource.Play();
             }
