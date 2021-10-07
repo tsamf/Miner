@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 3501149311542287342}
   - component: {fileID: 3501149311542287343}
   - component: {fileID: 3501149311542287341}
-  - component: {fileID: 3501149311542287340}
   - component: {fileID: 3501149311542287123}
   m_Layer: 0
   m_Name: Slime
@@ -138,7 +137,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.01, y: -0.18}
@@ -166,32 +165,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd4b18ee7cae8ac4384a3948c9d9f7ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!61 &3501149311542287340
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3501149311542287339}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.03, y: -0.48}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.25, y: 0.9375}
-    newSize: {x: 1.25, y: 0.9375}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.74, y: 0.09}
-  m_EdgeRadius: 0
 --- !u!82 &3501149311542287123
 AudioSource:
   m_ObjectHideFlags: 0

@@ -11,11 +11,12 @@ public class CharacterController : MonoBehaviour
     public GameObject axe;
     public AudioClip hurt;
 
-    private bool facingLeft = true;
+    private bool facingLeft = false;
     private Rigidbody2D rigidbody2d;
     private Animator animator;
     private bool dying = false;
     private AudioSource audioSource;
+    private bool grounded = true;
 
     // Start is called before the first frame update
     void Start()
@@ -36,17 +37,7 @@ public class CharacterController : MonoBehaviour
 
             if (!Mathf.Approximately(0, movement))
             {
-                if (movement > 0)
-                {
-                    transform.rotation = Quaternion.Euler(0, 180, 0);
-                    facingLeft = false;
-                }
-                else
-                {
-                    transform.rotation = Quaternion.identity;
-                    facingLeft = true;
-                }
-
+                Flip(movement);
                 animator.SetBool("Walking", true);
             }
             else
@@ -54,8 +45,9 @@ public class CharacterController : MonoBehaviour
                 animator.SetBool("Walking", false);
             }
 
-            if (Input.GetButton("Jump") && Mathf.Abs(rigidbody2d.velocity.y) < 0.001f)
+            if (Input.GetButton("Jump") && grounded)
             {
+                grounded = false;
                 rigidbody2d.AddForce(new Vector2(0, JumpForce), ForceMode2D.Impulse);
                 animator.SetBool("Jumping", true);
                 audioSource.Play();
@@ -93,6 +85,20 @@ public class CharacterController : MonoBehaviour
         }
     }
 
+    private void Flip(float movement)
+    {
+        if (movement > 0)
+        {
+            transform.rotation = Quaternion.Euler(0, 180, 0);
+            facingLeft = false;
+        }
+        else
+        {
+            transform.rotation = Quaternion.identity;
+            facingLeft = true;
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "enemy")
@@ -102,7 +108,7 @@ public class CharacterController : MonoBehaviour
             audioSource.clip = hurt;
             audioSource.Play();
             Destroy(gameObject, animator.GetCurrentAnimatorStateInfo(0).length);
-           }
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -115,8 +121,19 @@ public class CharacterController : MonoBehaviour
             audioSource.Play();
             Destroy(gameObject, animator.GetCurrentAnimatorStateInfo(0).length);
         }
+        else if (collision.gameObject.tag=="ground")
+        {
+            grounded = true;
+        }
     }
 
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "ground")
+        {
+            grounded = false;
+        }
+    }
 
     void OnDestroy()
     {

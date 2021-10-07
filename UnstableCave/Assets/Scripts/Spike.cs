@@ -26,7 +26,14 @@ public class Spike : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float distance = Mathf.Abs(transform.position.x - player.transform.position.x);
+
+        float distance = float.MaxValue;
+
+        if (player != null)
+        {
+            distance = Mathf.Abs(transform.position.x - player.transform.position.x); ;
+        }
+       
 
         if (distance < distanceFromPlayer && !falling)
         {

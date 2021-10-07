@@ -20,10 +20,10 @@ public class Slime : MonoBehaviour
         
     }
 
-    
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "weapon")
+        if (collision.gameObject.tag == "weapon")
         {
             animator.Play("slimeDeath");
             audioSource.Play();
